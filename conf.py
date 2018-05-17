@@ -199,7 +199,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'XronosScheduler.tex', 'Xronos Scheduler Documentation',
+  ('index', 'SchedulerAdvancedUserGuide.tex', 'Xronos Scheduler Advanced User Guide',
    'John Winters', 'manual'),
 ]
 
