@@ -16,6 +16,9 @@ This section of the user guide is intended for users with special
 responsibilities - for instance someone responsible for exam invigilation,
 or who approves the use of various resources.
 
+Download this guide as a
+`PDF <https://xronos.uk/pdfs/SchedulerAdvancedUserGuide.pdf>`_
+
 .. toctree::
 
    invigilation
