@@ -21,6 +21,8 @@ Download this guide as a
 
 .. toctree::
 
+   approvals
+   forms
    invigilation
    contact
 
