@@ -1,7 +1,6 @@
 Exam invigilation
 =================
 
----------
 Overview
 ---------
 
@@ -15,34 +14,67 @@ when the actual exams are, and selecting the most suitable staff to use
 for each individual slot, taking into account suspended lessons
 and how many slots each staff member has already done.
 
------
-Steps
------
+Scheduler aims to help with the process of converting a general statement
+about when and where exams will be into a set of individual invigilation
+slots.
 
-The whole job can be broken down into a number of distinct steps:
+.. note::
 
-* Choose which staff can do invigilation
-* Record the times of the invigilation slots
-* Record the days on which the exams will occur
-* Record which rooms are to be used
-* Generate the event records
-* Allocate the right number of staff for each location and time
-* Notification
+   Scheduler uses the following terms:
 
-A system administrator can nominate one or more users to act as exams
-officers.  Once this is done, any of them can do any of the following
-steps.
+   - **Exam Cycle** - a set of exams like "3rd year summer 2019 exams",
+     or "January re-sits 2016".
 
----------------------
-Group of invigilators
----------------------
+   - **Exam Session** - a continuous period of time when exams are in
+     progress.  Typically an Exam Cycle will have several (possibly many)
+     Exam Sessions.  Each Exam Session has a start and end time, and covers
+     not just the actual duration of the exam(s), but also the setup
+     and clear up times.  An example might be "Wed 8th June, 08:45 - 12:30".
 
-It's probable that your school will have a specific list of people
-who are eligible to invigilate exams.  This may well be very similar
-to your list of teaching staff, with the odd addition or removal.
+   - **Exam/Invigilation Slot** - a period of time within an Exam Session
+     which is allocated to one or more individuals to invigilate.  The
+     duration of your Slots will typically be driven by your school's
+     normal timetable.
 
-Scheduler's standard group handling facilities can assist you in
-assembling a suitable list.
+
+In setting up an Exam Cycle in Scheduler it is assumed that someone has
+already decided when the exams will happen and what rooms they will use.
+We enter that information into Scheduler, and then along with what it
+already knows about your school day it can generate all the necessary
+Exam Slots.  Given a list of the staff who may do invigilation, it will
+also assist you with allocating individual staff to each Slot.
+
+
+.. note::
+
+  All the screen shots below are taken from the
+  `Scheduler demonstration system <https://schedulerdemo.xronos.uk/>`_.
+  You can work through all the stages yourself by logging in as CED
+  from the pull-down login menu.  Claire Dunwoody (CED) is designated
+  as the exams officer on this system.  You will see some differences
+  in staff names because most of the staff are randomly generated
+  each night, but the general flow remains the same.
+
+  It is assumed that you already know the basics of how to create
+  events within Scheduler - if not then see the
+  `Scheduler User Guide <https://xronos.uk/events.html>`_.
+
+General setup - done only once
+------------------------------
+
+The next three items need be done only once, then the same data will persist
+across all your Exam Cycles with only minimum changes.
+
+Who can invigilate?
+-------------------
+
+Assuming your normal teaching staff do invigilation (rather than extra
+people hired in specially) your first step is to set up a Scheduler Group
+listing those who are eligible to invigilate.
+
+Scheduler's normal facilities for combining and building on groups mean
+that you can base this group on an existing group - e.g. Teaching Staff -
+adding or removing people as needed.
 
 .. image:: invigilatorgroup.png
    :scale: 75%
@@ -62,14 +94,12 @@ find later that you want to add or remove someone.
 By creating your own group based
 on a system group as shown here, you gain much more flexibility.
 
-
----------------
-Timing of slots
----------------
+Shape of the day
+----------------
 
 Your school will have its own idea of how long an invigilation slot
 should last and when they will be.  Quite likely this will reflect your
-school's normal timetable.  You can enter this information as an
+school's normal timetable.  You enter this information as an
 Exam Template.  From the menu icon in the top bar, choose
 Menu => Invigilation => Template, and then click on the "New Rota template"
 button.  Enter a name for it (e.g. "Internal examinations") and 
@@ -95,24 +125,110 @@ You can add or remove the slots until you have the correct configuration,
 then click on "Done".
 
 You may want to set up more than one template to reflect the different
-ways in which you organise different exam sessions.  For instance, one
-might have exam slots all day, whilst another had them only in the
-morning, or only on certain days of the week.  You can create as many
-templates as you need to reflect your own particular organisation.
+ways in which you organise different exam sessions.  For instance, you
+might have different period times in your lower school from those in
+your upper school, in which case you'd probably want two different
+rota templates - one for each.
 
-Templates can be used for just a single exam session, or re-used over
-many if your timing requirements stay the same.
+How many invigilators per room
+------------------------------
+
+Each Location record within Scheduler contains a field specifying the
+default number of invigilators for that room.  This value defaults to
+1, which is appropriate for normal classrooms.
+
+It is probable however that your school has some bigger venues too
+which are used for public examinations and the like.  By editing the
+Location records for these rooms you can change their defaults.
+
+For instance, you might use your Sports Hall for public exams, and you
+might want to set the default number of invigilators there to 5 if
+it's a big one.
+
+You can always tweak this number later at the point of allocating
+the invigilators.  If you happen to know there's only a small number
+of candidates at a particular time, you can allocate two invigilators
+and then set the number for that particular slot in that room to two.
 
 
------------
-Exam cycles
------------
+Setting up an Exam Cycle
+------------------------
 
-An exam cycle represents an actual period of exams.  Typical examples
-would be "4th year exams" or "Public exams, summer 2017".
+Having done the general setup steps above, you are then ready to
+enter details of a particular Exam Cycle.
 
-To set one up, the exams officer should choose Menu => Invigilation => Cycles,
-and then click on the "New Exam Cycle" button.
+The timings of the Exam Sessions will be entered as normal events
+into Scheduler, with the required rooms attached to each Session.
+Scheduler needs some way of knowing that these particular events are
+the ones which define your sessions, and so each should also involve
+a particular Element of your choosing - referred to as a **Selector Element**.
+
+The simplest way of doing this is to create a new Property within
+the system.  It could be called "Year 11 exams", or anything else which
+you choose.  You can create a new one for each Exam Cycle, or re-use
+the same one for all of them.
+
+.. note::
+
+  The only time when you absolutely need to have two separate **Selector
+  Elements** is when you have two simultaneous Exam Sessions and you
+  want to keep them distinct.  Otherwise you could just have a single
+  one called "Exam session".
+
+
+Suspend the lessons
+-------------------
+
+If the Exam Cycle is replacing lessons for one or more year groups
+then the lessons for those year groups should be suspended on the
+relevant days.  This frees up the staff who would be teaching those
+lessons to be first choice for invigilating the exams.
+
+Information on how to suspend lessons will be found in the
+`Scheduler Admin Guide <https://xronos.uk/admin/gaps.html>`_.
+
+Suspensions take effect at the next data import from your MIS, so
+make sure you put the suspensions in place at least a day before
+you want to start allocating staff to invigilation slots.
+
+Entering the Exam Sessions
+--------------------------
+
+Exam Sessions are entered as normal Scheduler events.  You can use
+any of the usual techniques of clicking and dragging, and having entered
+one you can clone or repeat it to enter others.
+
+The following event represents an Exam Session from 08:45 (to allow setup
+time) to 12:00 on Mon 18th November.  The room in use is the Main Hall
+and it has the "Year 11 exams" property attached so that the system knows
+it is to be considered as part of our Exam Cycle.
+
+.. image:: enterevent1.png
+   :scale: 75%
+   :align: center
+
+and then this second one is the corresponding Exam Session in the
+afternoon.  Note that instead of using the Main Hall, this one is
+using three ordinary classrooms.
+
+.. image:: enterevent2.png
+   :scale: 75%
+   :align: center
+
+and the two together look like this:
+
+.. image:: eventsentered.png
+   :scale: 75%
+   :align: center
+
+Create an Exam Cycle
+--------------------
+
+With all the building blocks now in place, you can create an Exam Cycle
+record which pulls them all together.
+
+Choose Menu => Invigilation => Cycles, and then click on the "New Exam
+Cycle" button.
 
 .. image:: examcycleform.png
    :scale: 75%
@@ -121,92 +237,81 @@ and then click on the "New Exam Cycle" button.
 In the above screen shot, all the necessary fields have been filled in.
 The first field is a simple name for the cycle, then below it the
 template to be used.  On the right we have the duration of the cycle
-(just 1 day for this demonstration) and finally the name of the group
+(just 1 day for this demonstration) then the name of the group
 to be used to provide invigilators, and the default number to expect
-for each room.  Clicking the "Create" button will the cause the
-exam cycle to be created.
+for each room, and finally the Selector Element which let's Scheduler
+find the corresponding Exam Sessions which were entered a moment ago.
+
+Clicking the "Create" button will the cause the exam cycle to be created.
 
 
-------------
-Rooms to use
-------------
+Build the invigilation slots
+----------------------------
 
-Next we need to define which rooms will be used.  In this case we're
-going to use the Main Hall, and the Genghis Khan Suite.
+The system now has all the information which it needs in order to
+calculate your invigilation slots.  Back in the listing of Exam
+Cycles click on the right-hand "Edit" link against your newly
+created Exam Cycle and you will see a screen like this.
 
-Under "Rooms used" in the exam cycle listing, click on "Edit".  This
-will give you the following screen.
-
-
-.. image:: norooms.png
+.. image:: creating1.png
    :scale: 75%
    :align: center
 
+Here you could create individual records for each of the rooms to
+be used, but note the two buttons at the top, just under the title.
+They can do almost all the work for you.
 
-Type in the name of a room (the usual predictive text will appear) and
-then click Add.  Note that each room can have its own individual template
-and dates, but these default to being the same as those defined for
-the exam cycle.
+Click the "Scan for Rooms" button and your display will change to
+this.
 
-.. image:: emptyrooms.png
+.. image:: creating2.png
    :scale: 75%
    :align: center
 
-We now have the rooms defined, but currently no events.  To create the
-actual invigilation events, click on the "Generate" button for each
-room in turn.
+Scheduler has used the Selector Element to find all relevant events
+(the Exam Sessions) within the dates of the Exam Cycle, picked out
+all the rooms used by those events, and assembled them in a single
+list.  These are the rooms which will require invigilators.
 
-.. image:: fullrooms.png
+Then click the "Generate all" button and the display changes to this.
+
+.. image:: creating3.png
    :scale: 75%
    :align: center
 
-Note that the number of events in each room has now appeared, and the
-"Generate" button has changed into a "Regenerate" button.
+For each of the rooms previously identified, Scheduler has looked at
+when it is needed (from the Exam Session records) and at your defined
+invigilation times (from the Invigilation Template) and thus created
+all the Invigilation Slots which are needed.
 
-As far as possible, a "Regenerate" is non-destructive.  If you haven't
-changed anything then nothing will be lost.  However, if you have deleted a
-slot from the template then the corresponding slot (and all the invigilators)
-will be deleted from your exam cycle.
+You can see them more graphically by switching back to the usual
+schedule display and looking at the "Invigilation" item.
 
-.. warning::
-   If you edit the exam cycle record, change it to use a different
-   template and then click "Regenerate", all your existing events
-   will go and be replaced with new ones, even if the two templates
-   share some common time slots.
+.. image:: slotsmade.png
+   :scale: 75%
+   :align: center
 
-Re-generation can be very useful if, for instance, you want to add an
-extra slot, or perhaps move a whole cycle of exams from one room to
-another.  Just edit the corresponding line on this screen, change the
-room to the new required location, and then hit "Regenerate".  All your
-existing events, along with any allocated invigilators, will be moved
-to the new room.
+Here the display has been switched to a day view for clarity.
+There are 6 sequential slots in the Main Hall in the morning, then
+parallel slots in each of the 3 classrooms in the afternoon.  Each
+has a red flag to indicate that the necessary staff have not
+yet been allocated.  These
+flags are visible only to nominated exams officers - they don't appear
+to normal users.
 
-----------------
+
 Staff allocation
 ----------------
 
-If we now return to the normal calendar display (click on the School's
-name at the left in the top bar) and choose to look at "Invigilation"
-entries we see all the slots which we have requested in the two rooms.
-
-.. image:: unpopulated.png
-   :scale: 75%
-   :align: center
-
-
-Note that there is a single event for each room and slot, and currently
-they each have a red flag because they are short of invigilators.  These
-flags are visible only to nominated exams officers - they don't appear
-to normal users. By clicking on one of these events, you can start
+By clicking on one of these events, you can start
 allocating invigilators.
 
 .. image:: firstinvig.png
    :scale: 75%
    :align: center
 
-
-The event is currently set to expect the default of 3 invigilators and
-none has been allocated.  The box on the right lists free staff (those
+This slot wants 1 invigilator and none has so far been allocated.
+The box on the right lists free staff (those
 not currently teaching) and they have been sorted in order of
 suitability.
 
@@ -219,21 +324,30 @@ for the current week.  Currently no-one has any invigilations so they're
 all 0.
 
 To choose someone, simply click on the + next to the name and they will
-move over into the "Allocated" box.  If, perhaps, only 2 people are needed
-instead of 3 then you can nudge down the number expected.  Once the
-number allocated matches the number expected, then the flag on that
-particular event will go green.
+move over into the "Allocated" box.
 
-Once a few slots have been filled, the staff listing gets more interesting.
-
-.. image:: someinvig.png
+.. image:: firstallocated.png
    :scale: 75%
    :align: center
 
-In this listing, we can see that Denise Rowstock might be the first
-choice because she would otherwise have been teaching year 11, but
-she's already been given 2 invigilation slots today.  Simon Philpotts
-has done only 1, so he might be preferable.  (This demonstration school
+Click on "Done" and the dialogue will close.  You then see that the
+flag on that particular slot has changed to green indicating it is
+complete.
+
+.. image:: onedone.png
+   :scale: 75%
+   :align: center
+
+Once a few slots have been filled, the staff listing gets more interesting.
+
+.. image:: secondinvig.png
+   :scale: 75%
+   :align: center
+
+In this listing, we can see that Alex Greene might be the first
+choice because he would otherwise have been teaching year 11, but
+he's already been given 2 invigilation slots today.  Denise Rowstock
+has done none, so she might be preferable.  (This demonstration school
 has an unfeasibly small number of staff, which is why they are getting
 so many slots each.)
 
