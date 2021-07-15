@@ -25,6 +25,7 @@ Download this guide as a
    forms
    invigilation
    advancedgroups
+   adhoc
    contact
 
 
