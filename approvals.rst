@@ -18,7 +18,6 @@ screenshots follow on directly from the documentation about creating
 events in the basic user guide.)
 
 .. image:: eventapproving1.png
-   :scale: 75%
    :align: center
 
 
@@ -31,7 +30,6 @@ is the simplest.  Clicking on that menu item produces a listing like
 this:
 
 .. image:: eventapproving2.png
-   :scale: 75%
    :align: center
 
 There is no form associated with this request, and there are three
@@ -65,7 +63,6 @@ For this request, if we click the green tick it goes into a state
 of "Approved", and the user's count of pending items goes down to (2).
 
 .. image:: eventapproving3.png
-   :scale: 75%
    :align: center
 
 
@@ -77,14 +74,12 @@ Some resources - like catering - have a form attached.  Clicking
 Menu => Events => Catering brings us to this screen:
 
 .. image:: eventapproving4.png
-   :scale: 75%
    :align: center
 
 The word "Complete" in the final column is a link, and clicking on it
 allows the form to be viewed.
 
 .. image:: eventapproving5.png
-   :scale: 75%
    :align: center
 
 Let's assume that approval can't be given yet because of the lack of
@@ -92,13 +87,11 @@ an event description.  Clicking "Back" to go back to the listing and
 then the blue button produces a small dialogue.
 
 .. image:: eventapproving6.png
-   :scale: 75%
    :align: center
 
 and then the request moves into a state of "Noted".
 
 .. image:: eventapproving7.png
-   :scale: 75%
    :align: center
 
 The user's count of items awaiting attention has now gone down to (1).

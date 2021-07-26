@@ -115,21 +115,18 @@ your Ad Hoc category, you should find you have an extra menu item like
 this:
 
 .. image:: adhocmenu.png
-   :scale: 75%
    :align: center
 
 Click on the "Music Lessons" menu item and you will see a screen like
 this.
 
 .. image:: adhocnocycles.png
-   :scale: 75%
    :align: center
 
 Currently there are no Cycles defined so click on the "New cycle"
 button and fill in the fields.
 
 .. image:: adhocmakingcycle.png
-   :scale: 75%
    :align: center
 
 .. note::
@@ -147,7 +144,6 @@ where we would select a Cycle on which to base our new Cycle, and specify
 how much of the previous one was to be carried over.
 
 .. image:: adhocmadecycle.png
-   :scale: 75%
    :align: center
 
 Note that the above cycle is currently flagged as "Not current".  Because
@@ -157,7 +153,6 @@ want by default.  Click on the "Set as" button next to the name of the
 cycle to make it the current one.
 
 .. image:: adhoccurrentcycle.png
-   :scale: 75%
    :align: center
 
 The cycle is now flagged as current and our view has been moved on to the
@@ -176,14 +171,12 @@ the name of a subject in the "Add subject" field and press Enter.
 Continuing doing this until all your subjects are listed.
 
 .. image:: adhocsubjectfulllist.png
-   :scale: 75%
    :align: center
 
 The list can get a bit long for the screen so buttons are provided to
 fold the display.  Click on "Hide all" to reduce it.
 
 .. image:: adhocsubjectfoldedlist.png
-   :scale: 75%
    :align: center
 
 Staff
@@ -202,21 +195,18 @@ Click on the next tab - "By Staff" to start entering staff information.
    entered on one is visible on the other.
 
 .. image:: adhocnostaff.png
-   :scale: 75%
    :align: center
 
 Enter the names of staff who are going to teach your Ad Hoc lessons in
 exactly the same way as you did for subjects.
 
 .. image:: adhocwithstaff.png
-   :scale: 75%
    :align: center
 
 For the purpose of this example, we will have just J.S. Bach teaching
 Violin and Ludwig van Beethoven teaching Viola.
 
 .. image:: adhocbystaff.png
-   :scale: 75%
    :align: center
 
 Although I have entered the subjects under the staff headings, if we
@@ -224,7 +214,6 @@ flip back to the "By Subject" tab we find exactly the same information
 there.
 
 .. image:: adhocbysubject.png
-   :scale: 75%
    :align: center
 
 Availability
@@ -236,7 +225,6 @@ from the "By Staff" tab by clicking on the "Availability" link next
 to the staff member's name.
 
 .. image:: adhocjsbavail.png
-   :scale: 75%
    :align: center
 
 The background periods shown on this screen were defined by your
@@ -251,7 +239,6 @@ an availability schedule for JSB.  Then drag the end of the Tuesday
 morning one to 11 o'clock.
 
 .. image:: adhocjsbentered.png
-   :scale: 75%
    :align: center
 
 To delete a slot entered in error, just click on it again.
@@ -268,7 +255,6 @@ If a pupil has been entered with the wrong duration of lesson, just
 click on the number of minutes and you can change it.
 
 .. image:: adhocwithpupils.png
-   :scale: 75%
    :align: center
 
 
@@ -287,27 +273,23 @@ Click on the "Allocate" tab to see a list of your allocations - currently
 empty.
 
 .. image:: adhocnoallocations.png
-   :scale: 75%
    :align: center
 
 Click on the "New allocation" button and the only information which you
 need to give is a name to identify it.
 
 .. image:: adhoconeallocation.png
-   :scale: 75%
    :align: center
 
 Then click on your new allocation's "Edit" button to start placing lessons.
 
 .. image:: adhocallocating1.png
-   :scale: 75%
    :align: center
 
 Click on JSB's "Allocate" button and you should get a screen much like
 this:
 
 .. image:: adhocallocating2.png
-   :scale: 75%
    :align: center
 
 This is one of the more complex screens with quite a bit to take in.
@@ -341,7 +323,6 @@ cell on the left hand side, his timetable will appear in the schedule
 on the right.
 
 .. image:: adhocallocating3.png
-   :scale: 75%
    :align: center
 
 All the lessons are green indicating that he has not yet missed any
@@ -350,7 +331,6 @@ cell on the left onto the Monday morning area and it will be positioned
 automatically at the start of that slot.
 
 .. image:: adhocallocating4.png
-   :scale: 75%
    :align: center
 
 Note that all Peter's German lessons have now changed colour because
@@ -363,7 +343,6 @@ You can remove timetables entirely by clicking on the "Clear timetable"
 button under the student cells.
 
 .. image:: adhocallocating5.png
-   :scale: 75%
    :align: center
 
 On the above screen, most of the week's lessons have been scheduled and
@@ -376,7 +355,6 @@ If you now click on James Greenwood's cell on the left, another little
 nuance appears.
 
 .. image:: adhocallocating6.png
-   :scale: 75%
    :align: center
 
 
@@ -392,7 +370,6 @@ First thing on Tuesday looks like a good time for his Violin lesson
 so we can put it there.
 
 .. image:: adhocallocating7.png
-   :scale: 75%
    :align: center
 
 Note that, whilst Scheduler will attempt to assist you in placing lessons,
@@ -403,7 +380,6 @@ apparently available then, and it being a lesson which James has already
 missed one of.
 
 .. image:: adhocallocating8.png
-   :scale: 75%
    :align: center
 
 Note that the English lessons have moved further from green towards red because
@@ -411,7 +387,6 @@ James is now missing two of them.  If we move on to the next week and again
 deliberately put James's lesson in an English lesson it gets even worse.
 
 .. image:: adhocallocating9.png
-   :scale: 75%
    :align: center
 
 When you're happy with what you've done, click on "Save & exit" and you're
@@ -419,7 +394,6 @@ taken back to the list of staff to be allocated.  Note the indication of
 how much more you have to do.
 
 .. image:: adhocallocating10.png
-   :scale: 75%
    :align: center
 
 At any time, you can clone an Allocation and do further work on the clone.
@@ -432,7 +406,6 @@ Once you have an Allocation with which you are happy you can publish it
 by clicking on the "Implement" button on the listing of allocations.
 
 .. image:: adhocimplement.png
-   :scale: 75%
    :align: center
 
 Doing this will cause all the lessons in the allocation to be created

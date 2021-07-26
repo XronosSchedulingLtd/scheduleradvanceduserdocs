@@ -33,7 +33,6 @@ permission) choose Menu => Forms from the top menu bar.  You will
 see a screen something like this:
 
 .. image:: listingforms.png
-   :scale: 75%
    :align: center
 
 The form listed here is created by default in the demonstration
@@ -48,7 +47,6 @@ To edit this existing form, click on the "Edit" button to the right
 of its listing entry and you'll get a screen like this:
 
 .. image:: editingform1.png
-   :scale: 75%
    :align: center
 
 The name of the form is given in the field at the top, and then
@@ -71,7 +69,6 @@ description of their event.  Drag the "Text area" item from the right
 to just above the "Style of catering" field and we have:
 
 .. image:: editingform2.png
-   :scale: 75%
    :align: center
 
 The default name of "Text area" isn't terribly helpful, but you can
@@ -79,7 +76,6 @@ click on the little pen icon and adjust various properties of the
 field.
 
 .. image:: editingform3.png
-   :scale: 75%
    :align: center
 
 If you click on the label ("Text area") you can change it, and likewise
@@ -97,7 +93,6 @@ it "Event description" and given it some help text (which causes the
 black question mark) and some placeholder text.
 
 .. image:: editingform4.png
-   :scale: 75%
    :align: center
 
 When you've finished setting up your form the way you want, click
@@ -133,7 +128,6 @@ To do this, click on the name of the resource on the left hand side
 in your main calendar display and you'll get a screen like this:
 
 .. image:: attachingform1.png
-   :scale: 75%
    :align: center
 
 This is the normal screen for seeing more about a resource, but because
@@ -141,7 +135,6 @@ the current user is a controller of the resource there's an extra
 tab - "Forms".  Click on the Forms tab and you'll see:
 
 .. image:: attachingform2.png
-   :scale: 75%
    :align: center
 
 The field labelled "Form to use" is the usual kind of predictive
@@ -149,7 +142,6 @@ text field.  Just start typing the name of the form which you want,
 select it, and then click the "Set" button.
 
 .. image:: attachingform3.png
-   :scale: 75%
    :align: center
 
 In this case, the form for the resource has been set to be the one

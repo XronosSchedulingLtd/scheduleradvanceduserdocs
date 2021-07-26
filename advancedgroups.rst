@@ -115,7 +115,6 @@ it is easy to create an initial group.  This group specifies that it is
 to contain all the year 10 pupils, but not those who study French.
 
 .. image:: basicgroup.png
-   :scale: 75%
    :align: center
 
 However, perhaps the French trip is away only for a few days?  If
@@ -126,14 +125,12 @@ By clicking on the "Finished" button we can go back to the group
 listing, and note there the additional "Memberships" link.
 
 .. image:: grouplisting.png
-   :scale: 75%
    :align: center
 
 Clicking on that brings us to a listing of the actual **Membership**
 records which record the group's members.
 
 .. image:: membershiplisting.png
-   :scale: 75%
    :align: center
 
 There are two **Membership** records listed, both of which start on
@@ -148,7 +145,6 @@ that information.  Click on the "Edit" link for that record and we
 get a dialogue like this:
 
 .. image:: editmembership1.png
-   :scale: 75%
    :align: center
 
 Click in the date fields and you get the usual date dialogue.  We
@@ -156,13 +152,11 @@ can change the start and end dates to match the actual dates of the
 trip.
 
 .. image:: editmembership2.png
-   :scale: 75%
    :align: center
 
 And then save the modified record, giving us a listing like this.
 
 .. image:: membershiplisting2.png
-   :scale: 75%
    :align: center
 
 

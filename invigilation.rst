@@ -77,7 +77,6 @@ that you can base this group on an existing group - e.g. Teaching Staff -
 adding or removing people as needed.
 
 .. image:: invigilatorgroup.png
-   :scale: 75%
    :align: center
 
 In the above screen, a group has been created called "Invigilators (SJP)"
@@ -108,7 +107,6 @@ click on "Create".
 You will then see a screen like this:
 
 .. image:: blankrotatemplate.png
-   :scale: 75%
    :align: center
 
 Enter start times and end times for each of your sessions, clicking
@@ -116,7 +114,6 @@ Add after each one.  Note that you can set up different time slots
 for different days of the week if you want to.
 
 .. image:: filledrotatemplate.png
-   :scale: 75%
    :align: center
 
 In the above screen, we don't have any slots on Wednesday afternoons.
@@ -204,7 +201,6 @@ and it has the "Year 11 exams" property attached so that the system knows
 it is to be considered as part of our Exam Cycle.
 
 .. image:: enterevent1.png
-   :scale: 75%
    :align: center
 
 and then this second one is the corresponding Exam Session in the
@@ -212,13 +208,11 @@ afternoon.  Note that instead of using the Main Hall, this one is
 using three ordinary classrooms.
 
 .. image:: enterevent2.png
-   :scale: 75%
    :align: center
 
 and the two together look like this:
 
 .. image:: eventsentered.png
-   :scale: 75%
    :align: center
 
 Create an Exam Cycle
@@ -231,7 +225,6 @@ Choose Menu => Invigilation => Cycles, and then click on the "New Exam
 Cycle" button.
 
 .. image:: examcycleform.png
-   :scale: 75%
    :align: center
 
 In the above screen shot, all the necessary fields have been filled in.
@@ -254,7 +247,6 @@ Cycles click on the right-hand "Edit" link against your newly
 created Exam Cycle and you will see a screen like this.
 
 .. image:: creating1.png
-   :scale: 75%
    :align: center
 
 Here you could create individual records for each of the rooms to
@@ -265,7 +257,6 @@ Click the "Scan for Rooms" button and your display will change to
 this.
 
 .. image:: creating2.png
-   :scale: 75%
    :align: center
 
 Scheduler has used the Selector Element to find all relevant events
@@ -276,7 +267,6 @@ list.  These are the rooms which will require invigilators.
 Then click the "Generate all" button and the display changes to this.
 
 .. image:: creating3.png
-   :scale: 75%
    :align: center
 
 For each of the rooms previously identified, Scheduler has looked at
@@ -288,7 +278,6 @@ You can see them more graphically by switching back to the usual
 schedule display and looking at the "Invigilation" item.
 
 .. image:: slotsmade.png
-   :scale: 75%
    :align: center
 
 Here the display has been switched to a day view for clarity.
@@ -307,7 +296,6 @@ By clicking on one of these events, you can start
 allocating invigilators.
 
 .. image:: firstinvig.png
-   :scale: 75%
    :align: center
 
 This slot wants 1 invigilator and none has so far been allocated.
@@ -327,7 +315,6 @@ To choose someone, simply click on the + next to the name and they will
 move over into the "Allocated" box.
 
 .. image:: firstallocated.png
-   :scale: 75%
    :align: center
 
 Click on "Done" and the dialogue will close.  You then see that the
@@ -335,13 +322,11 @@ flag on that particular slot has changed to green indicating it is
 complete.
 
 .. image:: onedone.png
-   :scale: 75%
    :align: center
 
 Once a few slots have been filled, the staff listing gets more interesting.
 
 .. image:: secondinvig.png
-   :scale: 75%
    :align: center
 
 In this listing, we can see that Alex Greene might be the first
@@ -388,7 +373,6 @@ form like this.
 
 
 .. image:: notifyinvig.png
-   :scale: 75%
    :align: center
 
 The start and end date indicate the period for which you want to
@@ -404,7 +388,6 @@ Click on the "Go" button and you should see a screen much like this:
 
 
 .. image:: notifysent.png
-   :scale: 75%
    :align: center
 
 
